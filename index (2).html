@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- High Traffic SEO Meta Tags -->
+    <title>PinnacleHome | Luxury Home Improvement, Modern Architecture & Interior Design</title>
+    <meta name="description" content="Expert home improvement guides, budget kitchen remodels, modern luxury interior design, small bathroom renovations, and high ROI DIY home makeover tips.">
+    <meta name="keywords" content="home improvement, budget kitchen remodel, luxury interior design, modern architecture, smart home upgrades, small bathroom renovation, home makeover tips, DIY home renovation 2026">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="PinnacleHome Editorial">
+
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- COMPLETE CSS STYLING (Luxury Dark & Gold Theme) -->
+    <style>
+        :root {
+            --bg-main: #0d0e12;
+            --bg-secondary: #14161d;
+            --bg-card: #1c1f2a;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --gold-primary: #d4af37;
+            --gold-hover: #e5c158;
+            --border-color: rgba(255, 255, 255, 0.08);
+            --border-gold: rgba(212, 175, 55, 0.35);
+            --font-heading: 'Cinzel', serif;
+            --font-sans: 'Plus Jakarta Sans', sans-serif;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --shadow: 0 12px 35px -10px rgba(0, 0, 0, 0.6);
+            --radius-sm: 6px;
+            --radius-md: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1320px;
+            margin: 0 auto;
+        }
+
+        .text-gold {
+            color: var(--gold-primary);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(8px);
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .badge-gold {
+            background: var(--gold-primary);
+            color: #000;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            background-color: #08090b;
+            border-bottom: 1px solid var(--border-color);
+            padding: 8px 0;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        .top-bar-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-socials a {
+            color: var(--text-muted);
+            margin-left: 14px;
+            transition: var(--transition);
+        }
+
+        .top-socials a:hover {
+            color: var(--gold-primary);
+        }
+
+        /* Navigation Header */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(13, 14, 18, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-gold {
+            color: var(--gold-primary);
+        }
+
+        .logo small {
+            font-family: var(--font-sans);
+            font-size: 0.55rem;
+            letter-spacing: 3px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--gold-primary);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 30px;
+            padding: 6px 14px;
+            gap: 8px;
+        }
+
+        .search-box input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 0.85rem;
+            width: 170px;
+            font-family: var(--font-sans);
+        }
+
+        .btn-subscribe {
+            background: transparent;
+            color: var(--gold-primary);
+            border: 1px solid var(--gold-primary);
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-subscribe:hover {
+            background: var(--gold-primary);
+            color: #000;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 24px 0 40px 0;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.8fr 1fr;
+            gap: 20px;
+        }
+
+        .hero-main {
+            border-radius: var(--radius-md);
+            background-size: cover;
+            background-position: center;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            min-height: 480px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+        }
+
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            line-height: 1.25;
+            margin: 12px 0;
+            font-weight: 700;
+        }
+
+        .hero-desc {
+            color: #d1d5db;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .meta-info {
+            display: flex;
+            gap: 20px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .hero-side {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .side-card {
+            flex: 1;
+            border-radius: var(--radius-md);
+            background-size: cover;
+            background-position: center;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .side-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-gold);
+        }
+
+        .side-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            margin: 8px 0;
+        }
+
+        .side-card p {
+            font-size: 0.85rem;
+            color: #cbd5e1;
+        }
+
+        /* Filter Pills */
+        .filter-section {
+            padding: 10px 0 26px;
+        }
+
+        .filter-pills {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            padding-bottom: 8px;
+        }
+
+        .pill {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            color: var(--text-muted);
+            padding: 9px 20px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: var(--transition);
+        }
+
+        .pill:hover,
+        .pill.active {
+            background: var(--gold-primary);
+            color: #0d0e12;
+            border-color: var(--gold-primary);
+        }
+
+        /* Layout Grid with Sidebar */
+        .layout-with-sidebar {
+            display: grid;
+            grid-template-columns: 2.2fr 1fr;
+            gap: 36px;
+        }
+
+        .section-heading h2 {
+            font-family: var(--font-heading);
+            font-size: 1.85rem;
+        }
+
+        .section-heading .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 4px 0 24px;
+        }
+
+        /* Article Cards */
+        .article-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+        }
+
+        .article-card {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .article-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-gold);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+        }
+
+        .article-img-wrap {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .article-img-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .article-card:hover .article-img-wrap img {
+            transform: scale(1.08);
+        }
+
+        .article-category {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+        }
+
+        .article-body {
+            padding: 22px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .article-body h3 {
+            font-family: var(--font-heading);
+            font-size: 1.25rem;
+            line-height: 1.4;
+            margin-bottom: 10px;
+            color: #fff;
+            transition: var(--transition);
+        }
+
+        .article-card:hover .article-body h3 {
+            color: var(--gold-primary);
+        }
+
+        .article-body p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            line-height: 1.55;
+            margin-bottom: 18px;
+            flex-grow: 1;
+        }
+
+        .article-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid var(--border-color);
+            padding-top: 14px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .btn-read-more {
+            color: var(--gold-primary);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        /* Sidebar Widgets */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .sidebar-widget {
+            background: var(--bg-card);
+            border-radius: var(--radius-md);
+            padding: 24px;
+            border: 1px solid var(--border-color);
+        }
+
+        .widget-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .widget-header h3 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+        }
+
+        .calculator-widget p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .calc-group {
+            margin-bottom: 14px;
+        }
+
+        .calc-group label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #e5e7eb;
+            margin-bottom: 6px;
+        }
+
+        .calc-group select,
+        .calc-group input {
+            width: 100%;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: #fff;
+            padding: 10px 14px;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .btn-calculate,
+        .btn-gold-block {
+            width: 100%;
+            background: var(--gold-primary);
+            color: #000;
+            border: none;
+            padding: 12px;
+            border-radius: var(--radius-sm);
+            font-weight: 700;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .btn-calculate:hover,
+        .btn-gold-block:hover {
+            background: var(--gold-hover);
+        }
+
+        .calc-result {
+            margin-top: 16px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px dashed var(--gold-primary);
+            padding: 12px 16px;
+            border-radius: var(--radius-sm);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .calc-result strong {
+            font-size: 1.3rem;
+            color: var(--gold-primary);
+            font-family: var(--font-heading);
+        }
+
+        /* Tags SEO Cloud */
+        .tags-cloud {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            color: #93c5fd;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tag:hover {
+            background: var(--gold-primary);
+            color: #000;
+        }
+
+        .input-dark {
+            width: 100%;
+            background: #08090b;
+            border: 1px solid var(--border-color);
+            padding: 12px 14px;
+            border-radius: var(--radius-sm);
+            color: #fff;
+            margin-bottom: 12px;
+            outline: none;
+        }
+
+        /* Modal Overlay */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-gold);
+            border-radius: var(--radius-md);
+            max-width: 800px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            padding: 36px;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 18px;
+            right: 20px;
+            background: transparent;
+            border: none;
+            color: #fff;
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        .modal-content-inner img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: var(--radius-sm);
+            margin: 18px 0;
+        }
+
+        .modal-content-inner h2 {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            line-height: 1.3;
+        }
+
+        .modal-content-inner .article-full-text {
+            line-height: 1.8;
+            color: #e2e8f0;
+        }
+
+        .modal-content-inner .article-full-text h3 {
+            font-family: var(--font-heading);
+            color: var(--gold-primary);
+            margin: 20px 0 10px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #07080a;
+            border-top: 1px solid var(--border-color);
+            padding: 60px 0 25px;
+            margin-top: 70px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1.2fr 1.2fr 1.2fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            margin: 16px 0;
+        }
+
+        .footer-links h4 {
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            margin-bottom: 18px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.88rem;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--gold-primary);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-muted);
+        }
+
+        /* Responsive Media Queries */
+        @media (max-width: 992px) {
+            .hero-grid, .layout-with-sidebar, .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .article-cards-grid { grid-template-columns: 1fr; }
+            .hero-title { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <span><i class="fa-solid fa-bolt text-gold"></i> <strong>Trending 2026:</strong> Top 10 High-ROI Smart Home Upgrades You Can Do This Weekend</span>
+            <div class="top-socials">
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-gold">PINNACLE</span>HOME
+                <small>ESTATE & IMPROVEMENT</small>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#featured" class="active">Featured</a>
+                <a href="#articles">Articles</a>
+                <a href="#articles">Kitchen & Bath</a>
+                <a href="#articles">Interior Design</a>
+                <a href="#articles">DIY & Budget</a>
+                <a href="#tools">Cost Calculator</a>
+            </nav>
+
+            <div class="nav-actions">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Search high-ROI ideas...">
+                </div>
+                <button class="btn-subscribe" onclick="handleSubscribeModal()">Subscribe</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero / Featured Section (Pinnacle List Style) -->
+    <section class="hero" id="featured">
+        <div class="container hero-grid">
+            <div class="hero-main" style="background-image: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=80');">
+                <span class="badge badge-gold">Cover Story • 2026 Trend</span>
+                <h1 class="hero-title">10 High-ROI Luxury Home Improvement Projects That Add Massive Property Value</h1>
+                <p class="hero-desc">From open-concept smart kitchen transformations to eco-luxury outdoor living spaces, learn which architectural renovations pay back up to 85% at resale.</p>
+                <div class="meta-info">
+                    <span><i class="fa-regular fa-clock"></i> 8 Min Read</span>
+                    <span><i class="fa-regular fa-user"></i> By Marcus Sterling</span>
+                    <span><i class="fa-solid fa-fire text-gold"></i> 45.2K Views</span>
+                </div>
+            </div>
+
+            <div class="hero-side">
+                <div class="side-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80');">
+                    <span class="badge">Kitchen Remodeling</span>
+                    <h3>Budget Kitchen Makeover: Luxury Look Under $5,000</h3>
+                    <p>Modern quartz countertops, painted shaker cabinets & brass hardware secrets.</p>
+                </div>
+
+                <div class="side-card" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.1)), url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80');">
+                    <span class="badge">Bathroom Design</span>
+                    <h3>Spa-Inspired Small Bathroom Renovation Ideas</h3>
+                    <p>Walk-in curbless showers, floating vanities, and ambient LED backlit mirrors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEO Category Filter Tabs -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-pills" id="filterPills">
+                <button class="pill active" data-category="all">All Topics</button>
+                <button class="pill" data-category="kitchen">Kitchen Remodel</button>
+                <button class="pill" data-category="interior">Interior Trends</button>
+                <button class="pill" data-category="diy">DIY & Budget</button>
+                <button class="pill" data-category="smart-home">Smart Home Tech</button>
+                <button class="pill" data-category="outdoor">Outdoor & Patio</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-content" id="articles">
+        <div class="container layout-with-sidebar">
+            
+            <!-- Left: Articles Grid -->
+            <div class="articles-area">
+                <div class="section-heading">
+                    <h2>Trending Home Improvement Guides</h2>
+                    <p class="subtitle">Search-optimized blueprints for stylish, value-boosting architectural upgrades.</p>
+                </div>
+
+                <div class="article-cards-grid" id="articlesGrid"></div>
+            </div>
+
+            <!-- Right Sidebar: Widgets -->
+            <aside class="sidebar">
+                
+                <!-- Quick ROI Estimator Widget -->
+                <div class="sidebar-widget calculator-widget" id="tools">
+                    <div class="widget-header">
+                        <i class="fa-solid fa-calculator text-gold"></i>
+                        <h3>Renovation ROI Calculator</h3>
+                    </div>
+                    <p>Estimate how much value your renovation project adds to your property.</p>
+                    
+                    <div class="calc-group">
+                        <label for="projectType">Project Type:</label>
+                        <select id="projectType">
+                            <option value="0.82">Minor Kitchen Remodel (82% ROI)</option>
+                            <option value="0.74">Bathroom Makeover (74% ROI)</option>
+                            <option value="0.95">Hardwood Flooring Refinish (95% ROI)</option>
+                            <option value="0.88">Outdoor Deck & Patio Addition (88% ROI)</option>
+                            <option value="0.68">Smart Home Solar & HVAC (68% ROI)</option>
+                        </select>
+                    </div>
+
+                    <div class="calc-group">
+                        <label for="projectCost">Estimated Budget ($):</label>
+                        <input type="number" id="projectCost" value="8000" step="500">
+                    </div>
+
+                    <button class="btn-calculate" onclick="calculateROI()">Calculate Value Added</button>
+                    
+                    <div class="calc-result" id="calcResult">
+                        <span>Expected Resale Value Added:</span>
+                        <strong id="roiValue">$6,560</strong>
+                    </div>
+                </div>
+
+                <!-- SEO Keywords Cloud -->
+                <div class="sidebar-widget tags-widget">
+                    <div class="widget-header">
+                        <i class="fa-solid fa-fire text-gold"></i>
+                        <h3>High-Traffic SEO Keywords</h3>
+                    </div>
+                    <div class="tags-cloud">
+                        <span class="tag">#KitchenRemodel2026</span>
+                        <span class="tag">#SmallBathroomHacks</span>
+                        <span class="tag">#LuxuryLivingRoom</span>
+                        <span class="tag">#ModernFarmhouse</span>
+                        <span class="tag">#DIYFlooring</span>
+                        <span class="tag">#CurbAppealIdeas</span>
+                        <span class="tag">#SmartThermostat</span>
+                        <span class="tag">#AestheticWallPaint</span>
+                        <span class="tag">#MinimalistInterior</span>
+                        <span class="tag">#LowCostHomeDecor</span>
+                    </div>
+                </div>
+
+                <!-- Newsletter Subscription Card -->
+                <div class="sidebar-widget newsletter-widget">
+                    <div class="widget-header">
+                        <i class="fa-regular fa-envelope-open-text text-gold"></i>
+                        <h3>Weekly Design Digest</h3>
+                    </div>
+                    <p>Join 30,000+ homeowners receiving high-value transformation tips every Friday.</p>
+                    <form onsubmit="handleSubscribeForm(event)">
+                        <input type="email" placeholder="Enter your email address" required class="input-dark">
+                        <button type="submit" class="btn-gold-block">Get Free Renovation Guide</button>
+                    </form>
+                </div>
+
+            </aside>
+        </div>
+    </main>
+
+    <!-- Modal for Reading Full Article -->
+    <div class="modal-overlay" id="articleModal">
+        <div class="modal-card">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <span class="logo-gold">PINNACLE</span>HOME
+                </a>
+                <p>The premier luxury magazine and resource for modern architecture, home improvement, interior decor, and real estate market trends.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Popular Categories</h4>
+                <ul>
+                    <li><a href="#">Kitchen & Dining Renovations</a></li>
+                    <li><a href="#">Modern Living Room Aesthetics</a></li>
+                    <li><a href="#">Master Suite & Luxury Bathrooms</a></li>
+                    <li><a href="#">Outdoor Patios & Landscaping</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Home Guides</h4>
+                <ul>
+                    <li><a href="#">2026 Renovation Cost Index</a></li>
+                    <li><a href="#">DIY vs Contractor Guide</a></li>
+                    <li><a href="#">Best Paint Colors for Resale</a></li>
+                    <li><a href="#">Eco-Friendly Materials</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Editorial & SEO</h4>
+                <ul>
+                    <li><a href="#">Write For Us (Home Decor)</a></li>
+                    <li><a href="#">Advertising & Media Kit</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom container">
+            <p>&copy; 2026 PinnacleHome Media. All rights reserved. Designed for optimal SEO and luxury home lifestyle.</p>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC (Search, Filter, ROI Calculator, Reader Modal) -->
+    <script>
+        const articlesData = [
+            {
+                id: 1,
+                title: "Budget Kitchen Remodel: 7 Smart Secrets for a High-End Luxury Look",
+                category: "kitchen",
+                categoryLabel: "Kitchen Remodel",
+                readTime: "6 Min Read",
+                image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=800&q=80",
+                snippet: "Transform dull cabinets, swap modern brushed brass hardware, and install faux-quartz countertops without spending more than $4,000.",
+                seoKeywords: ["kitchen remodel on a budget", "luxury kitchen ideas", "cabinet makeover", "quartz countertops ROI"],
+                content: `
+                    <p>Remodeling a kitchen is statistically proven to yield between <strong>75% to 85% Return on Investment (ROI)</strong>. Spending $50,000 on custom cabinetry is unnecessary when strategic design updates can achieve a breathtaking architectural aesthetic.</p>
+                    <h3>1. Paint Shaker Cabinets with Moody Modern Neutrals</h3>
+                    <p>Instead of replacing wooden cabinets, sand them down and apply satin-finish dark olive green, warm charcoal, or off-white taupe. Pairing these tones with satin brass handles elevates the entire perimeter.</p>
+                    <h3>2. Calacatta Quartz Waterfall Islands</h3>
+                    <p>A waterfall countertop instantly anchors the kitchen into high luxury territory. Quartz is non-porous, stain-resistant, and maintains resale value much higher than traditional granite.</p>
+                    <h3>3. Under-Cabinet Layered LED Lighting (3000K Warmth)</h3>
+                    <p>Lighting is the unsung hero of interior architecture. Dimmable warm LED strips under floating shelves and upper cabinets eliminate shadows and add dramatic depth.</p>
+                `
+            },
+            {
+                id: 2,
+                title: "Small Bathroom Renovation: 5 High-Impact Upgrades for Tight Spaces",
+                category: "interior",
+                categoryLabel: "Bathroom Design",
+                readTime: "5 Min Read",
+                image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80",
+                snippet: "Curbless walk-in showers, vertical fluted tiles, and floating vanities maximize square footage and bring five-star hotel vibes.",
+                seoKeywords: ["small bathroom remodel", "walk-in shower ideas", "floating vanity", "modern bathroom 2026"],
+                content: `
+                    <p>A compact bathroom doesn't mean compromising on spa-level opulence. With smart architectural tweaks, a 40 sq ft powder room can feel expansive.</p>
+                    <h3>1. Continuous Flooring with Frameless Glass Showers</h3>
+                    <p>Eliminating the shower curb and extending the same floor tile seamlessly into the shower enclosure tricks the eye into perceiving double the floor area.</p>
+                    <h3>2. Wall-Mounted Floating Vanities</h3>
+                    <p>Exposing open floor underneath the vanity creates an airy feeling. Add an LED glow strip underneath for night navigation and boutique ambiance.</p>
+                    <h3>3. Vertical Stacking of Subway or Zellige Tiles</h3>
+                    <p>Laying tiles vertically draws the eye upward toward the ceiling, creating the illusion of taller walls and grander proportions.</p>
+                `
+            },
+            {
+                id: 3,
+                title: "2026 Luxury Living Room Trends: Warm Minimalism & Organic Textures",
+                category: "interior",
+                categoryLabel: "Interior Trends",
+                readTime: "7 Min Read",
+                image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80",
+                snippet: "Say goodbye to sterile grey aesthetics. Discover why warm bouclé fabrics, travertine coffee tables, and curved arches rule 2026 decor.",
+                seoKeywords: ["living room decor trends 2026", "warm minimalism", "travertine furniture", "luxury home styling"],
+                content: `
+                    <p>Interior design in 2026 focuses on sensory tranquility—blending earthy stone textures, unlacquered metals, and bespoke sculptural furniture.</p>
+                    <h3>1. The Return of Earth Tones and Warm Sand Palettes</h3>
+                    <p>Cool greys have been replaced by rich terracotta, muted sage, beige travertine, and warm linen drapes that soften natural sunlight.</p>
+                    <h3>2. Curved Architectural Arches & Fluted Wood Accents</h3>
+                    <p>Sharp rectangular edges are giving way to gentle arches in doorways and custom built-in entertainment consoles crafted from fluted white oak.</p>
+                `
+            },
+            {
+                id: 4,
+                title: "Smart Home Energy Upgrades That Pay For Themselves in 2 Years",
+                category: "smart-home",
+                categoryLabel: "Smart Home Tech",
+                readTime: "6 Min Read",
+                image: "https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=800&q=80",
+                snippet: "Smart thermostats, smart breaker panels, and automated motorized shades cut utility bills by up to 30% while future-proofing your estate.",
+                seoKeywords: ["smart home upgrades", "energy efficiency tips", "smart thermostat savings", "home automation 2026"],
+                content: `
+                    <p>Smart home integration is no longer a gimmick; it is a primary selling feature for modern luxury properties looking to slash energy waste.</p>
+                    <h3>1. AI-Driven Smart Thermostats with Room Sensors</h3>
+                    <p>Systems that adjust temperatures based on actual occupancy reduce cooling and heating costs by 15-23% annually.</p>
+                    <h3>2. Motorized Solar Reflective Blinds</h3>
+                    <p>Programmed to lower during peak afternoon UV index hours, automated shades keep interiors naturally cool and protect luxury hardwood from sun fading.</p>
+                `
+            },
+            {
+                id: 5,
+                title: "DIY Hardwood & Luxury Vinyl Plank (LVP) Flooring Installation Guide",
+                category: "diy",
+                categoryLabel: "DIY & Budget",
+                readTime: "8 Min Read",
+                image: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?auto=format&fit=crop&w=800&q=80",
+                snippet: "A step-by-step masterclass on laying waterproof luxury vinyl plank flooring with zero squeaks and flawless transitions.",
+                seoKeywords: ["DIY flooring installation", "luxury vinyl plank LVP", "waterproof flooring guide", "hardwood floor makeover"],
+                content: `
+                    <p>Flooring transforms the visual flow of an entire house. Luxury Vinyl Plank (LVP) offers 100% waterproof protection and authentic embossed wood grain at one-third the cost of solid oak.</p>
+                    <h3>1. Subfloor Preparation is 80% of the Job</h3>
+                    <p>Ensure the subfloor is level within 3/16-inch per 10 feet. Grind down high spots and use self-leveling underlayment compound on dips.</p>
+                    <h3>2. Stagger Joints by at Least 8 Inches</h3>
+                    <p>Never create repeating 'H' patterns. Randomize plank cuts to emulate authentic natural hardwood milling.</p>
+                `
+            },
+            {
+                id: 6,
+                title: "Outdoor Living: Transform Your Backyard with Luxury Outdoor Kitchens",
+                category: "outdoor",
+                categoryLabel: "Outdoor & Patio",
+                readTime: "7 Min Read",
+                image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+                snippet: "Pergolas with retractable louvers, built-in pizza ovens, and fire pits turn underutilized yards into year-round entertaining paradises.",
+                seoKeywords: ["outdoor kitchen ideas", "patio makeover", "backyard pergola", "outdoor fire pit ROI"],
+                content: `
+                    <p>Post-2020 homeowners prioritize outdoor living rooms as valuable square footage. An outdoor kitchen and covered pergola can yield up to 90% return.</p>
+                    <h3>1. Weatherproof Stainless Steel & Granite Cooking Stations</h3>
+                    <p>Incorporate marine-grade 304 stainless steel cabinetry and honed granite countertops that withstand rain, frost, and heat.</p>
+                    <h3>2. Low-Voltage Landscape Uplighting</h3>
+                    <p>Highlight architectural trees and pathway stone pavers with subtle 2700K brass spotlights for resort-quality nighttime aesthetics.</p>
+                `
+            }
+        ];
+
+        document.addEventListener("DOMContentLoaded", () => {
+            renderArticles(articlesData);
+            setupFilterListeners();
+            setupSearchListener();
+        });
+
+        function renderArticles(list) {
+            const container = document.getElementById("articlesGrid");
+            if (!container) return;
+
+            if (list.length === 0) {
+                container.innerHTML = `<div style="grid-column: 1/-1; padding: 40px; text-align: center; color: var(--text-muted);"><h3>No articles match your search</h3><p>Try searching for "kitchen", "bathroom", "ROI", or "flooring".</p></div>`;
+                return;
+            }
+
+            container.innerHTML = list.map(item => `
+                <article class="article-card" onclick="openArticleModal(${item.id})">
+                    <div class="article-img-wrap">
+                        <img src="${item.image}" alt="${item.title}" loading="lazy">
+                        <span class="badge badge-gold article-category">${item.categoryLabel}</span>
+                    </div>
+                    <div class="article-body">
+                        <h3>${item.title}</h3>
+                        <p>${item.snippet}</p>
+                        <div class="article-footer">
+                            <span><i class="fa-regular fa-clock"></i> ${item.readTime}</span>
+                            <span class="btn-read-more">Read Guide <i class="fa-solid fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        function setupFilterListeners() {
+            const pills = document.querySelectorAll(".filter-pills .pill");
+            pills.forEach(pill => {
+                pill.addEventListener("click", () => {
+                    pills.forEach(p => p.classList.remove("active"));
+                    pill.classList.add("active");
+                    const cat = pill.getAttribute("data-category");
+                    renderArticles(cat === "all" ? articlesData : articlesData.filter(a => a.category === cat));
+                });
+            });
+        }
+
+        function setupSearchListener() {
+            const searchInput = document.getElementById("searchInput");
+            if (!searchInput) return;
+            searchInput.addEventListener("input", (e) => {
+                const query = e.target.value.toLowerCase().trim();
+                const filtered = articlesData.filter(a => 
+                    a.title.toLowerCase().includes(query) ||
+                    a.snippet.toLowerCase().includes(query) ||
+                    a.seoKeywords.some(k => k.toLowerCase().includes(query))
+                );
+                renderArticles(filtered);
+            });
+        }
+
+        function openArticleModal(id) {
+            const article = articlesData.find(a => a.id === id);
+            if (!article) return;
+            const modal = document.getElementById("articleModal");
+            const content = document.getElementById("modalContent");
+
+            content.innerHTML = `
+                <div class="modal-content-inner">
+                    <span class="badge badge-gold">${article.categoryLabel}</span>
+                    <h2>${article.title}</h2>
+                    <div class="meta-info" style="margin-bottom: 15px;">
+                        <span><i class="fa-regular fa-clock"></i> ${article.readTime}</span>
+                        <span><i class="fa-solid fa-tag text-gold"></i> SEO High-Traffic Article</span>
+                    </div>
+                    <img src="${article.image}" alt="${article.title}">
+                    <div class="article-full-text">${article.content}</div>
+                    <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid var(--border-color); display: flex; gap: 8px; flex-wrap: wrap;">
+                        <strong style="color: var(--gold-primary); width: 100%; font-size: 0.85rem;">Ranking Keywords:</strong>
+                        ${article.seoKeywords.map(k => `<span class="tag">#${k.replace(/\\s+/g, '')}</span>`).join('')}
+                    </div>
+                </div>
+            `;
+            modal.style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("articleModal").style.display = "none";
+        }
+
+        window.addEventListener("click", (e) => {
+            const modal = document.getElementById("articleModal");
+            if (e.target === modal) modal.style.display = "none";
+        });
+
+        function calculateROI() {
+            const rate = parseFloat(document.getElementById("projectType").value);
+            const cost = parseFloat(document.getElementById("projectCost").value);
+            if (isNaN(cost) || cost <= 0) {
+                alert("Please enter a valid budget amount!");
+                return;
+            }
+            const valueAdded = Math.round(cost * rate);
+            document.getElementById("roiValue").innerText = "$" + valueAdded.toLocaleString();
+        }
+
+        function handleSubscribeForm(e) {
+            e.preventDefault();
+            alert("Thank you! Your 2026 Home Renovation & Luxury Architecture Blueprint is on its way.");
+        }
+
+        function handleSubscribeModal() {
+            const email = prompt("Enter your email address for luxury home & renovation tips:");
+            if (email) alert("Welcome to PinnacleHome VIP Digest!");
+        }
+    </script>
+</body>
+</html>
